@@ -1,7 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * add_node - Adds a new node at the beginning of a stack_t list
  * @stack: Pointer to the stack
@@ -11,14 +10,12 @@
 stack_t *add_node(stack_t **stack, int n)
 {
 stack_t *new_node;
-
 new_node = malloc(sizeof(stack_t));
 if (new_node == NULL)
 {
 fprintf(stderr, "Error: malloc failed\n");
 exit(EXIT_FAILURE);
 }
-
 new_node->n = n;
 new_node->prev = NULL;
 
